@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>Screens Chronology Step-by-Step </title>
+  <script src="https://unpkg.com/popper.js@1"></script>
+  <script src="https://unpkg.com/tippy.js@5"></script>
+ </head>
+
+ <body style="background-image: url(./background.png)">
+    
+  <ul class="all" style="
+  font-size: 12px;
+  padding-inline-start: 30px;
+  font-family: Helvetica;
+  margin-block-start: 25px;
+">
+    <li><b>/lib</b>
+        <ul>
+            <li>injection_container.dart [135+136, 138]</li>
+            <li>main.dart [137, 139, 141, 142]</li>
+            <li><b>/core</b>
+                <ul>
+                    <li><b>/error</b>
+                        <ul>
+                            <li>exceptions.dart [37]</li>
+                            <li>failures.dart [2, 38]</li>
+                        </ul>
+                    </li>
+                    <li><b>/network</b>
+                        <ul>
+                            <li>network_info.dart [35, 64, 66✅, 67✅, 69✅]</li>
+                        </ul>
+                    </li>                    
+                    <li><b>/usecases</b>
+                        <ul>
+                            <li>usecase.dart [9, 20]</li>
+                        </ul>
+                    </li>
+                    <li><b>/util</b>
+                        <ul>
+                            <li>input_converter.dart [99, 102✅, 104✅, 106✅]</li>
+                        </ul>
+                    </li>  
+                </ul>
+            </li>
+            <li><b>/features</b>
+                <ul>
+                    <li><b>/number_trivia</b>
+                        <ul>
+                            <li><b>/data</b>
+                                <ul>
+                                   <li><b>/datasources</b>
+                                        <ul>
+                                            <li>number_trivia_local_data_source.dart [39, 71, 75✅, 76, 79✅, 81✅, 82✅]</li>
+                                            <li>number_trivia_remote_data_source.dart [36, 84, 86✅, 88✅, 90✅, 95✅, 96✅]</li>
+                                        </ul>
+                                   </li>
+                                   <li><b>/models</b>
+                                        <ul>
+                                            <li>number_trivia_model.dart [22, 28✅, 30⛔️, 31✅, 33✅]</li>
+                                        </ul>
+                                   </li>
+                                   <li><b>/repositories</b>
+                                        <ul>
+                                            <li>number_trivia_repository_impl.dart [34, 41, 43✅, 45⛔️, 48✅, 50✅, 52✅, 54✅, 60✅, 61✅, 62✅]</li>
+                                        </ul>
+                                   </li>   
+                                </ul>
+                            </li>
+                            <li><b>/domain</b>
+                                <ul>
+                                    <li><b>/entities</b>
+                                        <ul>
+                                            <li>number_trivia.dart [1]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/repositories</b>
+                                        <ul>
+                                            <li>number_trivia_repository.dart [3]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/usecases</b>
+                                        <ul>
+                                            <li>get_concrete_number_trivia.dart [5, 8, 10, 11, 13]</li>
+                                            <li>get_random_number_trivia.dart [16, 18, 19]</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </li>
+                            <li><b>/presentation</b>
+                                <ul>
+                                    <li><b>/bloc</b>
+                                        <ul>
+                                            <li>bloc.dart <small>(only export file in folder)</small></li>
+                                            <li>number_trivia_bloc.dart [108, 109, 114⛔️, 116, 119✅, 121✅, 125✅, 127✅, 129✅, 130✅, 133✅, 134✅]</li>
+                                            <li>number_trivia_event.dart [97, 98, 100]</li>
+                                            <li>number_trivia_state.dart [107]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/pages</b>
+                                        <ul>
+                                            <li>number_trivia_page.dart [140, 143, 144, 145, 146, 147, 148, 149+150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 181]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/widgets</b>
+                                        <ul>
+                                            <li>loading_widget.dart [164]</li>
+                                            <li>message_display.dart [163]</li>
+                                            <li>trivia_controls.dart [179, 180]</li>
+                                            <li>trivia_display.dart [165]</li>
+                                            <li>widgets.dart [162]</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </li>
+    <li><b>/test</b>
+        <ul>
+            <li><b>/core</b>
+                <ul>
+                    <li><b>/network</b>
+                        <ul>
+                            <li>network_info_test.dart [63, 65⛔️, 68⛔️]</li>
+                        </ul>
+                    </li>                    
+                    <li><b>/util</b>
+                        <ul>
+                            <li>input_converter_test.dart [101⛔️, 103⛔️, 105⛔️]</li>
+                        </ul>
+                    </li>  
+                </ul>
+            </li>
+            <li><b>/features</b>
+                <ul>
+                    <li><b>/number_trivia</b>
+                        <ul>
+                            <li><b>/data</b>
+                                <ul>
+                                    <li><b>/datasources</b>
+                                        <ul>
+                                            <li>number_trivia_local_data_source_test.dart [70, 72, 74⛔️, 77✅, 78⛔️, 80⛔️]</li>
+                                            <li>number_trivia_remote_data_source_test.dart [83, 85⛔️, 87, 89⛔️, 91, 92, 93, 94⛔️]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/models</b>
+                                        <ul>
+                                            <li>number_trivia_model_test.dart [21⛔️, 23✅, 27, 29⛔️, 32⛔️]</li>
+                                        </ul>
+                                    </li>
+                                    <li><b>/repositories</b>
+                                        <ul>
+                                            <li>number_trivia_repository_impl_test.dart [40, 42⛔️, 44⛔️, 46✅, 47⛔️, 49⛔️, 51⛔️, 53⛔️, 55, 56, 57, 58, 59⛔️]</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </li>
+                            <li><b>/domain</b>
+                                <ul>
+                                    <li><b>/usecases</b>
+                                        <ul>
+                                            <li>get_concrete_number_trivia_test.dart [4, 6, 7, 12, 14]</li>
+                                            <li>get_random_number_trivia_test.dart [15, 17]</li>
+                                        </ul>
+                                    </li>   
+                                </ul>
+                            </li>
+                            <li><b>/presentation</b>
+                                <ul>
+                                    <li><b>/bloc</b>
+                                        <ul>
+                                            <li>number_trivia_bloc_test.dart [110, 111, 112✅, 113⛔️, 115✅,  117⛔️, 118, 120⛔️, 122, 123✅, 124⛔️, 126⛔️, 128⛔️, 131+132⛔️]</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li><b>/fixtures</b>
+                <ul>
+                    <li>fixture_reader.dart [26]</li>
+                    <li>trivia_cached.json [73]</li>
+                    <li>trivia_double.json [25]</li>
+                    <li>trivia.json [24]</li>
+
+                </ul>
+            </li>
+        </ul>
+
+    </li>
+  </ul>
+
+  <script>
+      tippy('span');
+
+
+  </script>
+ </body>
+</html>
